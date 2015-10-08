@@ -78,13 +78,20 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Core.h" />
+    <ClInclude Include="GLGeneralMesh.h" />
     <ClInclude Include="IScreenManager.h" />
+    <ClInclude Include="GLRenderable.h" />
     <ClInclude Include="OpenglWindow.h" />
+    <ClInclude Include="SimpleRenderer.h" />
+    <ClInclude Include="SimpleGLShader.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Core.cpp" />
+    <ClCompile Include="GLGeneralMesh.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="OpenglWindow.cpp" />
+    <ClCompile Include="SimpleRenderer.cpp" />
+    <ClCompile Include="SimpleGLShader.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

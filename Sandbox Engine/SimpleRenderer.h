@@ -1,5 +1,6 @@
 #pragma once
 
+#include "SimpleGLShader.h"
 #include "GLGeneralMesh.h"
 
 namespace Dimension
@@ -18,8 +19,11 @@ namespace Dimension
 				
 				void Render();
 
+				void InitShader();
+			private:
 			private:
 				Shapes::GLGeneralMesh *m_Mesh;
+				SimpleGLShader *shader;
 			};
 
 		}

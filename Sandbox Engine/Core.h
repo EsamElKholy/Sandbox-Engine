@@ -1,6 +1,7 @@
 #pragma once
 
 #include "OpenglWindow.h"
+#include "TestGame.h"
 
 namespace Dimension
 {
@@ -24,6 +25,7 @@ namespace Dimension
 
 			public:
 				Window::OpenglWindow *m_Window;
+				TestGame *game;
 				bool m_Running;
 			};
 		}

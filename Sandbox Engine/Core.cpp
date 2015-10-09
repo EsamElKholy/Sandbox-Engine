@@ -12,6 +12,11 @@ namespace Dimension
 
 			Core::~Core()
 			{
+				if (game)
+					delete game;
+
+				if (m_Window)
+					delete m_Window;				
 			}
 			
 			void Core::InitEngine(const char* Title, const short &Width, const short &Height, const char* Mode)
@@ -20,7 +25,12 @@ namespace Dimension
 				if (!m_Window->Init(Title ,Width ,Height ,Mode))
 				{
 					m_Window->Destroy();
+					std::cout << "Couldn't initialize window!! \n";
+					system("PAUSE");
 				}
+
+				game = new TestGame();
+				game->InitGame();
 			}
 			void Core::RunEngine()
 			{				
@@ -42,8 +52,9 @@ namespace Dimension
 					{
 						StopEngine();
 					}
-
+					m_Window->Clear();
 					m_Window->Update();
+					game->Render();
 					m_Window->Render();
 				}
 

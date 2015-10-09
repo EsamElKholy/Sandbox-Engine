@@ -79,11 +79,15 @@
   <ItemGroup>
     <ClInclude Include="Core.h" />
     <ClInclude Include="GLGeneralMesh.h" />
+    <ClInclude Include="IRenderable.h" />
     <ClInclude Include="IScreenManager.h" />
     <ClInclude Include="GLRenderable.h" />
+    <ClInclude Include="MathLibsWrapper.h" />
     <ClInclude Include="OpenglWindow.h" />
     <ClInclude Include="SimpleRenderer.h" />
     <ClInclude Include="SimpleGLShader.h" />
+    <ClInclude Include="TestGame.h" />
+    <ClInclude Include="Transform.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Core.cpp" />
@@ -92,6 +96,8 @@
     <ClCompile Include="OpenglWindow.cpp" />
     <ClCompile Include="SimpleRenderer.cpp" />
     <ClCompile Include="SimpleGLShader.cpp" />
+    <ClCompile Include="TestGame.cpp" />
+    <ClCompile Include="Transform.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,6 +1,12 @@
 #pragma once
 
 #include <vector>
+#include <stdlib.h>
+#include <iostream>
+#include "GL\glew.h"
+
+#define VERTEX_SHADER 0
+#define FRAGMENT_SHADER 1
 
 namespace Dimension
 {
@@ -24,9 +30,8 @@ namespace Dimension
 			private:
 				char* ReadFromFile(char *Path);
 
-			private:
-				unsigned int m_ShaderProgramHandle;
-				std::vector<unsigned int> m_Shaders;
+			private:				
+				unsigned int m_ShaderProgramHandle = NULL;
 			};
 
 		}

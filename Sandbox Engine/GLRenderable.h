@@ -1,5 +1,7 @@
 #pragma once
 
+#include "IRenderable.h"
+
 namespace Dimension
 {
 	namespace GraphicsLayer
@@ -7,7 +9,7 @@ namespace Dimension
 		namespace Shapes
 		{
 
-			class GLRenderable
+			class GLRenderable : public IRenderable
 			{
 			public:
 				GLRenderable() {}
